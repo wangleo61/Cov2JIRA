@@ -568,8 +568,8 @@ for cid in cid_sorted_list:
     if not check_cid: 
         print 'Submit Jira ticket for CID ' + str(cid) + ' in Jira project with key ' + str(all_issue_dict.get('project').get('key'))
         issues = jira.issue(jira.create_issue(fields=all_issue_dict))
-        jira.add_attachment(issue=issues, attachment=''+pdf)
-        jira.add_attachment(issue=issues, attachment=''+csv)
+        jira.add_attachment(issue=issues, attachment='./'+pdf)
+        jira.add_attachment(issue=issues, attachment='./'+csv)
     else:
         print 'CID ' + str(cid) + ' existed in Jira project with key ' + str(all_issue_dict.get('project').get('key'))  
     
