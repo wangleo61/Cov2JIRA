@@ -1,2 +1,2 @@
-# Cov2JIRA
+# Coverity2JIRA
 Coverity Integration JIRA 
